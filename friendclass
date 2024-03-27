@@ -15,7 +15,8 @@ class Calculator{
 
 class Complex{
     int a,b;
-    friend int Calculator ::sumRealComplex(Complex o1, Complex o2);
+    //friend int Calculator ::sumRealComplex(Complex o1, Complex o2);
+    friend class Calculator;
     public:
     void setNumber(int n1, int n2){
         a = n1;
